@@ -1,36 +1,47 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Running the project
 
-## Getting Started
+This project uses node 18.
 
-First, run the development server:
+There are 3 steps to run the project, after clonning it: 
+
+####1. Add the .env file that was sent via email into the root folder of the project
+
+This project uses a database for persistence. The database is hosted and the connection string needs to be added for connection. 
+
+####2. Install all packages
+
+To install dependencies, run 
+
+```bash
+npm install
+```
+
+####3. Run the app
+
+To start the app, run:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) with your browser access it.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+##Details
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+###Main packages used
 
-## Learn More
+For this project, here are the main dependencies used:
+- react-hook-form for ease of implementing the forms and allowing for form to be separated into specific components.
+- Zod for form validation.
+- Shadcnui (component library) for the basic components used.
+- Prisma as ORM to access a Postgres database
 
-To learn more about Next.js, take a look at the following resources:
+###Database schema
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+For persistence of created bookings, I used a simple database schema to log:
+- Customer info
+- Booking info
+- Booking status
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Here is an overview of the schema:
+![image](https://github.com/JoaoTareco/bounce/assets/148398041/c4f52952-b810-4256-a91e-2e5b1a2599e3)
