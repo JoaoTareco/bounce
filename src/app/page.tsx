@@ -59,6 +59,8 @@ const App = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
+        // Each time we change the number of bags, fetch the price
+        // Improvement: Limit the number of requests. As is, its not very scalable
         const response = await axios.post(`/api/calculate-price`, {number});
 
         // The price comes pre-calculated to keep all logic on the backend
