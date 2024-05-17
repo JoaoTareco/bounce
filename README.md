@@ -33,6 +33,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser access it.
 For this project, here are the main dependencies used:
 - react-hook-form for ease of implementing the forms and allowing for form to be separated into specific components.
 - Zod for form validation.
+- Tailwind.
 - Shadcnui (component library) for the basic components used.
 - Prisma as ORM to access a Postgres database
 
