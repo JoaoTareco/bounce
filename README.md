@@ -4,11 +4,11 @@ This project uses node 18.
 
 There are 3 steps to run the project, after clonning it: 
 
-####1. Add the .env file that was sent via email into the root folder of the project
+#### 1. Add the .env file that was sent via email into the root folder of the project
 
 This project uses a database for persistence. The database is hosted and the connection string needs to be added for connection. 
 
-####2. Install all packages
+#### 2. Install all packages
 
 To install dependencies, run 
 
@@ -16,7 +16,7 @@ To install dependencies, run
 npm install
 ```
 
-####3. Run the app
+#### 3. Run the app
 
 To start the app, run:
 
@@ -26,9 +26,9 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser access it.
 
-##Details
+## Details
 
-###Main packages used
+### Main packages used
 
 For this project, here are the main dependencies used:
 - react-hook-form for ease of implementing the forms and allowing for form to be separated into specific components.
@@ -36,7 +36,7 @@ For this project, here are the main dependencies used:
 - Shadcnui (component library) for the basic components used.
 - Prisma as ORM to access a Postgres database
 
-###Database schema
+### Database schema
 
 For persistence of created bookings, I used a simple database schema to log:
 - Customer info
