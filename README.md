@@ -4,7 +4,7 @@ This project uses node 18.
 
 There are 3 steps to run the project, after clonning it: 
 
-#### 1. Add the .env file that was sent via email into the root folder of the project
+#### 1. Add the .env file
 
 This project uses a database for persistence. The database is hosted and the connection string needs to be added for connection. 
 
